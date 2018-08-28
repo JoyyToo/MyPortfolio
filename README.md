@@ -1,24 +1,23 @@
-# README
+# PORTFOLIO
+This is a Ruby on Rails 5 application that allows users to create their own portfolios
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
+    - Real time chat engine for comments
+    - Blog
+    - Portfolio
+    - Drag and drop interface
 
-Things you may want to cover:
+## External dependencies
+This web application is written with Ruby using the Ruby on Rails framework and a PostgreSQL database
 
-* Ruby version
+## Installation
+Once you have Ruby, Rails and PostgreSQL installed. Take the following steps to install the application:
+ - Run `git clone https://github.com/JoyyToo/DevcampPortfolio.git` to clone this repository
 
-* System dependencies
+ - Run `bundle install` to install all required gems
 
-* Configuration
+## How to run the test suite
+- Run test with `rspec spec`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Run the server
+- Run `rails s`
