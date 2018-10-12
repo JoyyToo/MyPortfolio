@@ -1,8 +1,21 @@
 <h1>HomePage</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
 
 <h1>Blog Posts</h1>
-<%= @posts.inspect %>
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th colspan="4"></th>
+  </tr>
+  </thead>
 
-<h1>Skills</h1>
-<%= @skills.inspect %>
+  <tbody>
+  <% @posts.each do |blog| %>
+    <tr>
+      <td><%= blog.title.upcase %></td>
+      <td><%= blog.body %></td>
+    </tr>
+  </tbody>
+<% end %>
+</table>
