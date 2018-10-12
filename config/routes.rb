@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'index', to: 'blogs#index'
+  get 'blog/:id', to: 'blogs#show'
 
   resources :blogs do
     member do
