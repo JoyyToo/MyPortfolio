@@ -53,3 +53,21 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # friendly routes
 gem 'friendly_id', '~>5.1.0'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.1'
+end
+
+gem 'rails-controller-testing'
+
+group :development, :test do
+  gem 'factory_bot_rails'
+end
+
+gem 'faker'
+gem 'coveralls', require: false
+
