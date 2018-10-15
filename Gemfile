@@ -70,4 +70,5 @@ end
 
 gem 'faker'
 gem 'coveralls', require: false
+gem 'devise', '~> 4.5'
 
