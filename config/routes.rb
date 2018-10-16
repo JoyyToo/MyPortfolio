@@ -14,9 +14,9 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'index', to: 'blogs#index'
   get 'blog/:id', to: 'blogs#show'
-  post 'blog', to: 'blogs#create'
+  # post 'blog', to: 'blogs#create'
   delete 'blog/:id', to: 'blogs#destroy'
-  put 'blog/:id', to: 'blogs#update'
+  # put 'blog/:id', to: 'blogs#update'
 
   resources :blogs do
     member do
