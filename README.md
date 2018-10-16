@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/0f4848a324f038dcd649/maintainability)](https://codeclimate.com/github/JoyyToo/DevcampPortfolio/maintainability)  [![Build Status](https://travis-ci.org/JoyyToo/DevcampPortfolio.svg?branch=ch-integrate-testing)](https://travis-ci.org/JoyyToo/DevcampPortfolio)  [![Coverage Status](https://coveralls.io/repos/github/JoyyToo/DevcampPortfolio/badge.svg?branch=master)](https://coveralls.io/github/JoyyToo/DevcampPortfolio?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0f4848a324f038dcd649/maintainability)](https://codeclimate.com/github/JoyyToo/DevcampPortfolio/maintainability)  [![Build Status](https://travis-ci.org/JoyyToo/DevcampPortfolio.svg?branch=master)](https://travis-ci.org/JoyyToo/DevcampPortfolio)  [![Coverage Status](https://coveralls.io/repos/github/JoyyToo/DevcampPortfolio/badge.svg?branch=master)](https://coveralls.io/github/JoyyToo/DevcampPortfolio?branch=master)
 # PORTFOLIO
 This is a Ruby on Rails 5 application that allows users to create their own portfolios
 
