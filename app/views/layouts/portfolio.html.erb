@@ -18,8 +18,6 @@
 
 <%= render 'shared/navbar', location: 'top' %>
 
-<% if session[:source] %>
-  <p>Thank you for visiting from me <%= session[:source] %></p>
-<% end %>
+<%= source_helper('portfolio') %>
 </body>
 </html>
