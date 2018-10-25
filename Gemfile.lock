@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/JoyyToo/joyy_view_tool
-  revision: cb7274cd8f34363a7b16939265860d472da6558f
-  specs:
-    joyy_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -102,6 +96,7 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    joyy_view_tool (0.1.0)
     jquery-rails (4.3.3)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -265,7 +260,7 @@ DEPENDENCIES
   faker
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
-  joyy_view_tool!
+  joyy_view_tool (~> 0.1.0)
   jquery-rails
   listen (~> 3.0.5)
   pg (>= 0.18, < 2.0)
