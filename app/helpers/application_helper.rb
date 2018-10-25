@@ -18,6 +18,11 @@ module ApplicationHelper
       content_tag(:p, greeting, class: 'source-greeting')
     end
   end
+
+  def copyright_generator
+    @copyright = JoyyViewTool::Renderer.copyright 'Joy Too',
+                                                  'All rights reserved'
+  end
 end
 
 # html_safe sanitizes so it is displayed as html instead of a string
