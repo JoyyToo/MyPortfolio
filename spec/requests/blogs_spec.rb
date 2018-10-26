@@ -63,8 +63,9 @@ RSpec.describe Blog, type: :request do
   describe 'DELETE /blog/:id' do
     before { delete "/blog/#{blog_id}" }
 
-    it 'returns status code 200' do
+    it 'returns status code 302' do
       expect(response).to have_http_status(302) # gets redirected
+      expect(flash[:notice]).to eq "Permission Denied"
     end
   end
 

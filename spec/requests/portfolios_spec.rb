@@ -24,6 +24,14 @@ RSpec.describe 'Portfolio', type: :request do
     end
   end
 
+  describe 'GET /react-items' do
+    before { get '/react-items' }
+
+    it 'returns status code 200' do
+      expect(response).to have_http_status(200)
+    end
+  end
+
   describe 'GET /portfolio/:id' do
       before { get "/portfolio/#{portfolio_id}" }
 
@@ -37,6 +45,7 @@ RSpec.describe 'Portfolio', type: :request do
 
     it 'returns status code 200' do
       expect(response).to have_http_status(302) # gets redirected
+      expect(flash[:notice]).to eq "Permission Denied"
     end
   end
 
