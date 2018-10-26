@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: %i[show edit update destroy toggle_status]
   layout 'blog'
   access all: %i[show index], user:
-      { except: %i[destroy new create edit update] }, site_admin: :all
+      { except: %i[destroy new create edit update toggle_status] }, site_admin: :all
 
   def index
     @blogs = Blog.special_blogs
