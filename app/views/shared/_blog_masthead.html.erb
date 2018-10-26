@@ -1,0 +1,6 @@
+<div class="my-blog">
+  <h1 class="blog-title">My blog</h1>
+  <p class="blog-description"> Blogs here </p>
+  <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+</div>
+<hr>

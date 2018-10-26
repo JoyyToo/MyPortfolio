@@ -15,12 +15,7 @@
   <body>
     <%= render 'shared/blog_nav' %>
 
-    <div class="my-blog">
-      <h1 class="blog-title">My blog</h1>
-      <p class="blog-description"> Blogs here </p>
-      <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-    </div>
-    <hr>
+    <%= render 'shared/blog_masthead' %>
 
     <main role="main" class="container">
       <div class="row">
@@ -31,14 +26,7 @@
 
       </div>
 
-  <!--      footer-->
-      <footer class="blog-footer">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by
-          <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        <p>
-          <a href="#">Back to top</a>
-        </p>
-      </footer>
+      <%= render 'shared/blog_footer' %>
 
       <%= source_helper('blog') %>
     </main>

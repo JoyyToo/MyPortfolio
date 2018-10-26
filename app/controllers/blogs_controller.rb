@@ -5,7 +5,7 @@ class BlogsController < ApplicationController
       { except: %i[destroy new create edit update toggle_status] }, site_admin: :all
 
   def index
-    @blogs = Blog.special_blogs
+    @blogs = Blog.page(params[:page]).per(5)
     @page_title = 'My portfolio blog'
   end
 
