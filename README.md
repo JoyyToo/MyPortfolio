@@ -24,7 +24,7 @@ Once you have Ruby, Rails and PostgreSQL installed. Take the following steps to 
 - Run
    - `rails db:create`
    
-   - `rails db:migrte`
+   - `rails db:migrate`
 
 ## To have sample data in your database:
 - Run `rails db:seed`
