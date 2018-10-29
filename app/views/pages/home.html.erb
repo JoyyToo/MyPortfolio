@@ -1,22 +1,7 @@
-<h1>Hi, <%= current_user.first_name %></h1>
-<h2>HomePage</h2>
-
-<h3>Blog Posts</h3>
-<table>
-  <thead>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th colspan="4"></th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @posts.each do |blog| %>
-    <tr>
-      <td><%= blog.title.upcase %></td>
-      <td><%= blog.body %></td>
-    </tr>
-  </tbody>
-<% end %>
-</table>
+<main role="main" class="inner cover">
+  <h1 class="cover-heading">Welcome to my portfolio</h1>
+  <p class="lead">The works of my hands, brain, heart and soul. This is where we make it happen. Impossibilities are only in the mind.</p>
+  <p class="lead">
+    <%= link_to 'About Me', about_me_path, class: 'btn btn-lg btn-secondary' %>
+  </p>
+</main>
