@@ -5,6 +5,10 @@ class Portfolio < ApplicationRecord
   accepts_nested_attributes_for :technologies,
                                 reject_if: lambda { |attrs| attrs['name'].blank? }
 
+  def self.by_position
+    order('position ASC')
+  end
+
   # def self.react
   #   where(subtitle: 'React JS')
   # end
