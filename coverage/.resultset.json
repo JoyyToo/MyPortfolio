@@ -1,14 +1,21 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/spec/models/blog_spec.rb": [
+      "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/spec/helpers/comments_helper_spec.rb": [
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         1,
         1,
-        2,
-        2,
-        null,
         null
       ],
       "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/spec/rails_helper.rb": [
@@ -710,6 +717,7 @@
         1,
         null,
         1,
+        1,
         null,
         1,
         0,
@@ -725,6 +733,15 @@
         1,
         null
       ],
+      "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/spec/factories/comments.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/spec/factories/portfolio.rb": [
         1,
         1,
@@ -738,6 +755,7 @@
         1,
         1,
         1,
+        null,
         0,
         null,
         1,
@@ -786,6 +804,7 @@
       "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/config/routes.rb": [
         1,
         1,
+        1,
         null,
         null,
         1,
@@ -829,6 +848,8 @@
         null,
         1,
         null,
+        null,
+        1,
         null,
         1,
         null,
@@ -907,11 +928,26 @@
         35,
         null,
         null,
+        1,
+        7,
+        7,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
         null,
         null,
         null
       ],
       "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/app/helpers/blogs_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/app/helpers/comments_helper.rb": [
         1,
         null
       ],
@@ -933,6 +969,34 @@
         1,
         1,
         null,
+        null,
+        null
+      ],
+      "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/spec/models/blog_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/joytoo/Desktop/RubyMine/DevcampPortfolio/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
         null,
         null
       ],
@@ -1272,16 +1336,16 @@
         1,
         null,
         1,
-        75,
+        77,
         null,
         null,
         1,
-        75,
-        75,
-        75,
-        75,
-        75,
-        75,
+        77,
+        77,
+        77,
+        77,
+        77,
+        77,
         null,
         null
       ],
@@ -1328,7 +1392,6 @@
         null,
         null,
         1,
-        0,
         0,
         null,
         null,
@@ -1397,6 +1460,6 @@
         null
       ]
     },
-    "timestamp": 1541019660
+    "timestamp": 1541080398
   }
 }
