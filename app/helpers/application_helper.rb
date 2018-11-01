@@ -62,6 +62,17 @@ module ApplicationHelper
   def active?(path)
     'active' if current_page? path
   end
+
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+    if alert
+      alert_generator(alert)
+    end
+  end
+
+  def alert_generator(message)
+    js add_gritter(message, title: "Joy's Portfolio", sticky: false)
+  end
 end
 
 # html_safe sanitizes so it is displayed as html instead of a string
