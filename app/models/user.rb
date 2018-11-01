@@ -12,6 +12,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :trackable
 
+  has_many :comments, dependent: :destroy
+
   validates_presence_of :name, :email
 
   def first_name
