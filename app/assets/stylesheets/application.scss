@@ -153,3 +153,16 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
 }
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container .card {
+  padding: 30px;
+}
+
+.app-card-container a {
+  color: royalblue;
+}
