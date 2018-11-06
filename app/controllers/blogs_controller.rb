@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: %i[show edit update destroy toggle_status]
+  before_action :set_sidebar_topics, except: %i[destroy create update toggle_status]
   layout 'blog'
   access all: %i[show index], user:
       { except: %i[destroy new create edit update toggle_status] }, site_admin: :all
