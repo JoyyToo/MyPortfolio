@@ -5,7 +5,11 @@ class BlogsController < ApplicationController
       { except: %i[destroy new create edit update toggle_status] }, site_admin: :all
 
   def index
-    @blogs = Blog.page(params[:page]).per(5)
+    if logged_in?(:site_admin)
+      @blogs = Blog.recent.page(params[:page]).per(5)
+    else
+      @blogs = Blog.published.page(params[:page]).per(5)
+    end
     @page_title = 'My portfolio blog'
   end
 
