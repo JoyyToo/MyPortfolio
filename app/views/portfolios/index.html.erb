@@ -1,5 +1,10 @@
 <div class="album py-5 bg-light">
   <div class="container">
+
+    <%= source_helper('alert alert-primary') %>
+
+    <%= link_to 'Add portfolio Item', new_portfolio_path, class: 'btn btn-primary new-portfolio' if logged_in?(:site_admin) %>
+
     <div class="row <%= 'sortable' if logged_in?(:site_admin) %>">
       <%= render @portfolio_items %>
     </div>

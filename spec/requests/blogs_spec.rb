@@ -31,7 +31,6 @@ RSpec.describe Blog, type: :request do
 
   describe 'GET /blogs' do
     before { get '/blogs' }
-    before { p blog }
 
     it 'returns status code 200' do
       expect(response).to be_success
@@ -42,8 +41,8 @@ RSpec.describe Blog, type: :request do
   describe 'GET /blogs:id' do
     before { get "/blog/#{blog_id}" }
 
-    it 'returns status code 200' do
-      expect(response).to have_http_status(200)
+    it 'returns status code 302' do # redirected
+      expect(response).to have_http_status(302)
     end
   end
 

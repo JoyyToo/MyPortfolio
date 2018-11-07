@@ -6,6 +6,9 @@
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+
     <meta name="keywords" content="<%= @seo_keywords %>"/>
 
     <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -29,8 +32,6 @@
       <%= render 'shared/blog_footer' %>
 
       <%= alerts %>
-
-      <%= source_helper('blog') %>
     </main>
   </body>
 </html>

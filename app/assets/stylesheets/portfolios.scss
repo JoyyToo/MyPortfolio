@@ -9,6 +9,21 @@
   --jumbotron-padding-y: 3rem;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -47,4 +62,15 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+.new-portfolio {
+  margin-bottom: 10px;
+}
+
+.card {
+  float: left;
+  width: 100%;
+  padding: .75rem;
+  border: 2px solid transparent;
 }

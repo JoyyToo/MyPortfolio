@@ -8,8 +8,19 @@
 
 /* stylelint-disable selector-list-comma-newline-after */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .display-4 {
@@ -166,3 +177,13 @@ a:focus{
 .comment-name {
   font-weight: 700;
 }
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0 10px 0 10px;
+}
+
+a.breadcrumb-item.active {
+  padding-right: 200px;
+}
+
