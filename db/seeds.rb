@@ -1,6 +1,25 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 
+User.create!(
+  name: 'Admin User',
+  email: 'admin@admin.com',
+  password: 'admin@admin.com',
+  password_confirmation: 'admin@admin.com',
+  roles: 'site_admin'
+)
+
+puts '1 admin user created'
+
+User.create!(
+  name: 'Test User',
+  email: 'test@test.com',
+  password: 'test@test.com',
+  password_confirmation: 'test@test.com'
+)
+
+puts '1 regular user created'
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
